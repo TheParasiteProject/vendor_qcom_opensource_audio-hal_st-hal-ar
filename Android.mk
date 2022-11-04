@@ -23,8 +23,8 @@ LOCAL_C_INCLUDES += \
     external/expat/lib \
     vendor/qcom/opensource/core-utils/fwk-detect \
     vendor/qcom/opensource/pal \
-    vendor/qcom/opensource/audio-hal/primary-hal/hal/audio_extn \
-    vendor/qcom/opensource/audio-hal/primary-hal/hal
+    $(call project-path-for,qcom-audio)/hal/audio_extn \
+    $(call project-path-for,qcom-audio)/hal
 
 LOCAL_SRC_FILES := \
     SoundTriggerDevice.cpp \
